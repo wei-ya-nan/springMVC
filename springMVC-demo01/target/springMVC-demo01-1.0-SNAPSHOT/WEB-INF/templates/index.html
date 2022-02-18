@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h2>首页</h2>
+<a th:href="@{/target}">跳转到target.html页面</a><br>
+<a href="target">跳转到target.html页面</a><!--这样也可以-->
+<a href="/target">跳转到target.html页面</a><!--解析之后是没有上下文路径的-->
+</body>
+</html>

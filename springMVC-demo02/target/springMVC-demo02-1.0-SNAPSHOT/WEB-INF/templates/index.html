@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H1>首页</H1>
+<a th:href="@{/hello/testRequestMapping(username=123,password='admin')}">测试requestMapping注解的位置</a><br>
+<a th:href="@{/testPath/1/admin}">测试requestMapping占位符的位置</a><br>
+
+</body>
+</html>

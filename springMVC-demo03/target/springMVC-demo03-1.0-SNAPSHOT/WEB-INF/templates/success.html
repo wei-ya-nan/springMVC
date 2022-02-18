@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>success</p>
+<!--<p th:text="${#request.testScope}"></p><br>-->
+<p th:text="${#request.getAttribute('testScope')}">
+<!--<p th:text="${testModelAndView}"></p><br>-->
+<!--<p th:text="${#request.getAttribute('testModelAndView')}"></p><br>-->
+<p th:text="${#request.getAttribute('testModelAndView')}"></p>
+<p th:text="${#request.getAttribute('testModel')}"></p>
+<p th:text="${testMap}"></p>
+<p th:text="${ModelMap}"></p>
+<!--<p th:text="${session.get('testSession')}"></p>-->
+
+<p th:text="${application.get('testApplication')}"></p>
+<p th:text="${session.testSession}"></p>
+
+
+</body>
+</html>
